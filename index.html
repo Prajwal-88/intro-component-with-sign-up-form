@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/app/dist/output.css">
+  <script src="./src/app/js/script.js" defer></script>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body class="font-pop bg-mobile bg-no-repeat bg-Red min-h-screen grid place-items-center relative pb-10 pt-16 lg:bg-repeat">
+  <div class="content-wrapper px-6 lg:grid lg:grid-cols-2 lg:gap-10 max-w-[1200px]">
+    <header class="lg:grid lg:place-items-center lg:p-0">
+      <article class="text-center lg:text-left lg:ps-16">
+        <h1 class="text-3xl font-semibold text-white mb-5 lg:text-5xl lg:max-w-[482px] ">Learn to code by watching others</h1>
+        <p class="text-base text-white lg:leading-[1.5rem] mb-12 lg:text-[16px]">See how experienced developers solve       problems in real-time. Watching scripted      tutorials is great, 
+          but understanding how developers think is invaluable. 
+        </p> 
+      </article>
+    </header>
+  
+    <main class="lg:max-w-[500px] lg:mx-auto">
+      <button class="bg-Blue w-full py-5 px-16 rounded-md mb-6 text-Grayish_Blue shadow-[0px_8px_0px_0px_rgba(0,0,0,0.1)] max-w-[644px]  lg:max-w-[480px] transition-all duration-150 ease-linear active:scale-90"> <strong class="text-white text-sm">Try it free 7 days</strong> then $20/mo. thereafter</button>
+  
+      <form action="#" method="get" class="bg-white rounded-lg overflow-hidden p-4 shadow-[0px_8px_0px_0px_rgba(0,0,0,0.1)] max-w-[644px]  lg:p-7 lg:max-w-[480px]">
+        
+        <fieldset class="border p-3 rounded-md mb-1" id="f1">
+          <input type="text" placeholder="First Name" class="text-sm w-full  outline-none" id="first-name"  data-type="input">
+        </fieldset>
+        
+        <fieldset class="border p-3 rounded-md  mt-3.5 mb-1">
+          <input type="text" placeholder="Last Name"  class="text-sm w-full outline-none" id="last-name" data-type="input">
+        </fieldset>
+        
+        <fieldset class="border p-3 rounded-md  mt-3.5 mb-1 ">
+          <input type="text" placeholder="Email Address"  class="text-sm w-full outline-none" id="email" data-type="input">
+        </fieldset>
+        
+        <fieldset class="border p-3 rounded-md  mt-3.5 mb-1  ">
+          <input type="password" placeholder="Password" class="text-sm  w-full  outline-none" id="password" data-type="input">
+        </fieldset>
+        <!-- <div class="text-xs text-Red text-right italic">Password cannot be empty</div> -->
+  
+        <input type="submit" value="Claim your free trial" class="py-3.5 px-0 bg-Green w-full uppercase text-sm rounded-md text-white mb-4 shadow-[0px_4px_0px_0px_hsla(154,59%,39%,0.8)] transition-all duration-150 ease-linear active:scale-90 cursor-pointer mt-3.5 ">
+  
+        <p class="text-xs text-center text-Grayish_Blue mb-2 px-3"> By clicking the button, you are agreeing to our <strong class="font-semibold text-Red">Terms and Services</strong></p>
+      </form>
+    </main>  
+  </div>
+  
+  <footer class="absolute bottom-0">
+    <p class="attribution ">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Prajwal Dhuli</a>.
+    </p>
+  </footer>
+</body>
+</html>
